@@ -1,0 +1,49 @@
+# Dependencies and generated build/test output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+
+# Local research, captures, and scratch work (never public fixtures)
+/.local/
+/research/
+/scratch/
+/tmp/
+*.log
+*.har
+*.trace
+*.blob
+*.sqlite
+*.sqlite3
+*.db
+*-wal
+*-shm
+
+# Exported conversations and crash-recovery payloads, at any depth
+Grok Bot/
+.grok-vault*
+*.payload
+
+# Local credentials/configuration and signing material
+.env
+.env.*
+!.env.example
+.npmrc
+.netrc
+credentials.json
+credentials.*.json
+*credentials*.json
+*token*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS/editor/agent-local state
+.DS_Store
+.idea/
+.vscode/
+/.codex/
+/.agents/

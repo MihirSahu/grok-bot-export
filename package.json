@@ -1,0 +1,25 @@
+{
+  "name": "grok-vault",
+  "version": "0.1.0-dev.2",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "bun": "1.4.2"
+  },
+  "scripts": {
+    "check": "tsc --noEmit && bun test",
+    "test": "bun test",
+    "check:public": "bun scripts/check-public-files.ts",
+    "build": "bun scripts/build.ts",
+    "verify:binary": "bun scripts/verify-binary.ts"
+  },
+  "dependencies": {
+    "unicode-case-folding": "1.1.1",
+    "yaml": "2.9.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.2",
+    "typescript": "7.0.2"
+  }
+}
